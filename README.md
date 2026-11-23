@@ -1,7 +1,7 @@
 # Fluxtruth.github.io
 
 Personal portfolio of Philipp Tschakert, published with GitHub Pages at
-<https://fluxtruth.github.io>.
+<https://philipp-tschakert.de>.
 
 A single static page, no server, no CMS, no database, no cookies, no tracking and no
 requests to third parties. Fonts and images are embedded in the page.
@@ -32,13 +32,12 @@ python3 -m http.server 8000 --directory public
 Pushing to `main` runs the workflow, checks the site and publishes `public/`.
 One-time setup in the repository: **Settings → Pages → Source: GitHub Actions**.
 
-## Custom domain (later)
+## Custom domain
 
-1. Add the domain under Settings → Pages and create a file `public/CNAME` with the domain.
-2. Set the DNS records as GitHub describes.
-3. Replace `https://fluxtruth.github.io` in `public/index.html` (`canonical`, `og:url`,
-   `og:image`, `twitter:image`), `public/robots.txt` and `public/sitemap.xml`, and regenerate `og.png`.
-4. Enable "Enforce HTTPS".
+The site runs on `philipp-tschakert.de` (file `public/CNAME`). DNS at the registrar: four A records
+to GitHub Pages and a `www` CNAME to `fluxtruth.github.io`. HTTPS is enforced under Settings → Pages.
+The URLs in `public/index.html` (`canonical`, `og:url`, `og:image`, `twitter:image`),
+`public/robots.txt` and `public/sitemap.xml` use this domain. `og.png` shows it as text.
 
 ## Before publishing
 
