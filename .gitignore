@@ -1,0 +1,16 @@
+# Betriebssystem und Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Geheimnisse (nie einchecken)
+.env
+.env.*
+*.pem
+*.key
+
+# Lokale Arbeitsdateien
+node_modules/
+*.log
+tmp/
